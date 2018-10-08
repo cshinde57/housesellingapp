@@ -1,0 +1,26 @@
+
+
+<table>
+  <tr>
+    <th> Name </th>
+    <th>Email </th>
+    <th>Phone</th>
+    <th>User type </th>
+    <th></th>
+
+  </tr>
+
+  <% if !@realtor.nil? then @realtor.each do |realtor| %>
+      <tr>
+        <td><%= realtor.name %></td>
+        <td><%= realtor.email %></td>
+        <td><%= realtor.phone %></td>
+        <td> Realtor </td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
+
+<br />
+
+
